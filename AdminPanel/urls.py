@@ -19,6 +19,7 @@ from . import views
 urlpatterns = [
     path('users', views.UsersView.as_view(), name='users'),
     path('searched_items', views.HistoryView.as_view(), name='history'),
-    path('blogs', views.HistoryView.as_view(), name='history'),
-
+    path('blogs', views.BlogsView.as_view(), name='blogs'),
+    path('tag_blogs', views.BlogTagMappingView.as_view(), name='tag_mapped_blogs'),
+    path('tags', views.TagsView.as_view(), name='tags'),
 ]
