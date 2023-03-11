@@ -15,3 +15,6 @@ class HistoryView(APIView):
         History.objects.create(searched_item=searched_item)
         return JsonResponse({'data' : True})
     
+    def put(self, request):
+        return JsonResponse({'data': True})
+    
